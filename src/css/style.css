@@ -1,0 +1,166 @@
+.d-flex {
+  display: flex;
+}
+.ji-center {
+  justify-items: center;
+}
+.ai-center {
+  align-items: center;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.fd-column {
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 7px !important;
+}
+
+:root {
+  --text-color-white: #fff;
+  --text-color-grey: #AFAFAF;
+  --main-color: #299EE0;
+  --main-color-lighter:#F4FBFF;
+  --main-color-darker: #0C5680;
+}
+
+/* Header styles */
+.header{
+  background-color: var(--main-color);
+}
+.header .brand-logo {
+  position: static;
+}
+.header .currency-select input.select-dropdown {
+  width: 100px;
+  margin: 0;
+  border: none;
+  color: var(--text-color-white);
+}
+.header .currency-select input.select-dropdown:focus {
+  border: none;
+}
+.header .currency-select li span {
+  color: var(--main-color);
+}
+.header .currency-select svg.caret {
+  fill: var(--text-color-white);
+}
+.logo {
+  color: var(--text-color-white)
+}
+
+/*Form style */
+.form-section {
+  margin-top: 20px;
+}
+.custom-field label.active {
+  color: var(--main-color) !important;
+}
+.custom-field .prefix.active{
+  color: var(--main-color) !important;
+}
+.input-custom:focus{
+  border-bottom: 1px solid var(--main-color) !important;
+  box-shadow: 0 1px 0 0 var(--main-color) !important;
+}
+.custom-title{
+  font-weight: 400 !important;
+  margin-bottom: 20px !important;
+}
+
+/*Datepicker style*/
+.custom-field .datepicker-date-display {
+  background-color: var(--main-color) !important;
+}
+.custom-field .btn-flat {
+  color: var(--main-color) !important;
+}
+.custom-field td.is-today {
+  color: var(--main-color) !important;
+}
+.custom-field td.is-selected {
+  background-color: var(--main-color) !important;
+}
+.custom-field td.is-selected.is-today {
+  color: #fff !important;
+}
+.custom-field button:focus {
+  background-color: var(--main-color) !important;
+}
+.custom-field .datepicker-date-button:focus {
+  background-color: var(--main-color) !important;
+}
+
+/* Ticket style*/
+.ticket-airline__name {
+  font-size: 20px;
+  font-weight: 400;
+}
+.ticket-price{
+  background-color: var(--main-color);
+  color: var(--text-color-white);
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px 25px 10px 25px;
+  border-radius: 12px;
+}
+.ticket-description {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.ticket-info {
+  flex-wrap: wrap;
+  background-color: var(--main-color-lighter) !important;
+}
+.ticket-depret__time {
+  color: var(--main-color-darker);
+  font-size: 24px;
+  font-weight: 700;
+}
+.ticket-depret__code{
+  font-size: 14px;
+  font-weight: 400;
+}
+.ticket-depret__date{
+  font-size: 14px;
+  font-weight: 400;
+}
+.ticket-transfers{
+  margin-top: 10px;
+  width: 100%;
+  color: var(--text-color-grey);
+  font-size: 12px;
+}
+
+/* Popup style*/
+.empty-msg_active{
+  top: 85% !important;
+  transition: 0.4s;
+}
+.empty-msg{
+  transition: 0.4s;
+  z-index: 1;
+  top: 100%;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  color: var(--text-color-white);
+  width: 45%;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 20px 40px;
+  border-radius: 12px;
+}
